@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  WeatherApp
+
+  Created by MANISH PATHAK
+  
+*/
+
+"something_went_wrong" = "Something went wrong, Please try again!";
+"error" = "Error";
+"ok" = "Ok";
+"weather_app" = "Weather App";
+"check_internet_connection" = "Please check your internet connection and try again";
+"no_internet_connection" = "No Internet Connection";
+"no_more_data_available" = "No Data is available";
