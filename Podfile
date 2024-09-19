@@ -6,6 +6,10 @@ target 'WeatherApp' do
   use_frameworks!
 
   # Pods for Podfile
+  #pod 'Alamofire'#, '~> 5.0'
+  pod 'ObjectMapper'
   pod 'NVActivityIndicatorView'#, '~> 4.4.0'
+  pod 'Kingfisher', '~> 5.0'
+  pod 'SnapKit'
 
 end
