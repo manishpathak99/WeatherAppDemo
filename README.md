@@ -69,7 +69,7 @@ ObjectMapper
 
 NVActivityIndicatorView
 
-## How to Run Test cases 
+## Run Test cases 
 To run test cases in Xcode, open the Test Navigator and click the play button next to the test or test bundle. Alternatively, use Cmd + U to run all tests. You can also run specific tests by clicking the diamond play button next to the test method in the code editor.
 
 
