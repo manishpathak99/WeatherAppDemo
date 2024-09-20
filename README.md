@@ -3,13 +3,13 @@ This application provides real-time weather information for any city using the O
 
 Key features:
 
-Search for weather information by city
+* Search for weather information by city
 
-Display temperature, wind speed, and humidity
+* Display temperature, wind speed, and humidity
 
-View minimum and maximum temperatures
+* View minimum and maximum temperatures
 
-Uses OpenWeather API for real-time data
+* Uses OpenWeather API for real-time data
 
 ## Pre-requisites
 XCode 16.0
