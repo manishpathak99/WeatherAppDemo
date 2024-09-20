@@ -9,6 +9,23 @@
 /* Begin PBXBuildFile section */
 		0390B9232588734DEA701B15 /* Pods_WeatherAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638E670DD71E45279D1E1FAE /* Pods_WeatherAppTests.framework */; };
 		A51831932C9CACE900CA31CD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A51831922C9CACE900CA31CD /* Localizable.strings */; };
+		A53AA2772C9D44F900CC8F45 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A53AA2592C9D44F900CC8F45 /* Info.plist */; };
+		A53AA2782C9D44F900CC8F45 /* weatherList.json in Resources */ = {isa = PBXBuildFile; fileRef = A53AA2732C9D44F900CC8F45 /* weatherList.json */; };
+		A53AA2792C9D44F900CC8F45 /* MockWeatherListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53AA2612C9D44F900CC8F45 /* MockWeatherListPresenter.swift */; };
+		A53AA27A2C9D44F900CC8F45 /* WeatherListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53AA26B2C9D44F900CC8F45 /* WeatherListRouterTests.swift */; };
+		A53AA27B2C9D44F900CC8F45 /* WeatherListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53AA26F2C9D44F900CC8F45 /* WeatherListViewControllerTests.swift */; };
+		A53AA27C2C9D44F900CC8F45 /* MockRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53AA2652C9D44F900CC8F45 /* MockRemoteDataManager.swift */; };
+		A53AA27D2C9D44F900CC8F45 /* WeatherListLocalDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53AA25A2C9D44F900CC8F45 /* WeatherListLocalDataManagerTests.swift */; };
+		A53AA27E2C9D44F900CC8F45 /* MockReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53AA2642C9D44F900CC8F45 /* MockReachability.swift */; };
+		A53AA27F2C9D44F900CC8F45 /* WeatherListViewControllerStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53AA26D2C9D44F900CC8F45 /* WeatherListViewControllerStub.swift */; };
+		A53AA2802C9D44F900CC8F45 /* WeatherListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53AA2692C9D44F900CC8F45 /* WeatherListPresenterTests.swift */; };
+		A53AA2812C9D44F900CC8F45 /* ReachableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53AA2672C9D44F900CC8F45 /* ReachableMock.swift */; };
+		A53AA2822C9D44F900CC8F45 /* MockWeatherListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53AA2622C9D44F900CC8F45 /* MockWeatherListViewController.swift */; };
+		A53AA2832C9D44F900CC8F45 /* MockRemoteOutputDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53AA2662C9D44F900CC8F45 /* MockRemoteOutputDataManager.swift */; };
+		A53AA2842C9D44F900CC8F45 /* JsonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53AA2752C9D44F900CC8F45 /* JsonUtil.swift */; };
+		A53AA2852C9D44F900CC8F45 /* MockListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53AA2632C9D44F900CC8F45 /* MockListPresenter.swift */; };
+		A53AA2862C9D44F900CC8F45 /* WeatherListRemoteDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53AA25C2C9D44F900CC8F45 /* WeatherListRemoteDataManagerTests.swift */; };
+		A53AA2872C9D44F900CC8F45 /* WeatherListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53AA25F2C9D44F900CC8F45 /* WeatherListInteractorTests.swift */; };
 		A5416F1B2C9C081C0005D788 /* DataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5416EE32C9C081C0005D788 /* DataManagerProtocol.swift */; };
 		A5416F1C2C9C081C0005D788 /* WeatherListRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5416EE52C9C081C0005D788 /* WeatherListRemoteDataManager.swift */; };
 		A5416F1E2C9C081C0005D788 /* WeatherListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5416EEA2C9C081C0005D788 /* WeatherListInteractor.swift */; };
@@ -64,6 +81,23 @@
 		6D6C762824745A714F53C27F /* Pods-WeatherAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherAppTests.release.xcconfig"; path = "Target Support Files/Pods-WeatherAppTests/Pods-WeatherAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		768FC9C88F6DAFA2588DC675 /* Pods-WeatherAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherAppUITests.release.xcconfig"; path = "Target Support Files/Pods-WeatherAppUITests/Pods-WeatherAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A51831922C9CACE900CA31CD /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A53AA2592C9D44F900CC8F45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A53AA25A2C9D44F900CC8F45 /* WeatherListLocalDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListLocalDataManagerTests.swift; sourceTree = "<group>"; };
+		A53AA25C2C9D44F900CC8F45 /* WeatherListRemoteDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListRemoteDataManagerTests.swift; sourceTree = "<group>"; };
+		A53AA25F2C9D44F900CC8F45 /* WeatherListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListInteractorTests.swift; sourceTree = "<group>"; };
+		A53AA2612C9D44F900CC8F45 /* MockWeatherListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWeatherListPresenter.swift; sourceTree = "<group>"; };
+		A53AA2622C9D44F900CC8F45 /* MockWeatherListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWeatherListViewController.swift; sourceTree = "<group>"; };
+		A53AA2632C9D44F900CC8F45 /* MockListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListPresenter.swift; sourceTree = "<group>"; };
+		A53AA2642C9D44F900CC8F45 /* MockReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockReachability.swift; sourceTree = "<group>"; };
+		A53AA2652C9D44F900CC8F45 /* MockRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRemoteDataManager.swift; sourceTree = "<group>"; };
+		A53AA2662C9D44F900CC8F45 /* MockRemoteOutputDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRemoteOutputDataManager.swift; sourceTree = "<group>"; };
+		A53AA2672C9D44F900CC8F45 /* ReachableMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachableMock.swift; sourceTree = "<group>"; };
+		A53AA2692C9D44F900CC8F45 /* WeatherListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListPresenterTests.swift; sourceTree = "<group>"; };
+		A53AA26B2C9D44F900CC8F45 /* WeatherListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListRouterTests.swift; sourceTree = "<group>"; };
+		A53AA26D2C9D44F900CC8F45 /* WeatherListViewControllerStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewControllerStub.swift; sourceTree = "<group>"; };
+		A53AA26F2C9D44F900CC8F45 /* WeatherListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewControllerTests.swift; sourceTree = "<group>"; };
+		A53AA2732C9D44F900CC8F45 /* weatherList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weatherList.json; sourceTree = "<group>"; };
+		A53AA2752C9D44F900CC8F45 /* JsonUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonUtil.swift; sourceTree = "<group>"; };
 		A5416E5A2C9BF3900005D788 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5416E702C9BF3950005D788 /* WeatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5416E7A2C9BF3950005D788 /* WeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +195,115 @@
 				A5416F172C9C081C0005D788 /* Main.storyboard */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		A53AA25B2C9D44F900CC8F45 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				A53AA25A2C9D44F900CC8F45 /* WeatherListLocalDataManagerTests.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		A53AA25D2C9D44F900CC8F45 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				A53AA25C2C9D44F900CC8F45 /* WeatherListRemoteDataManagerTests.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		A53AA25E2C9D44F900CC8F45 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				A53AA25B2C9D44F900CC8F45 /* Local */,
+				A53AA25D2C9D44F900CC8F45 /* Remote */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		A53AA2602C9D44F900CC8F45 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A53AA25F2C9D44F900CC8F45 /* WeatherListInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A53AA2682C9D44F900CC8F45 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				A53AA2612C9D44F900CC8F45 /* MockWeatherListPresenter.swift */,
+				A53AA2622C9D44F900CC8F45 /* MockWeatherListViewController.swift */,
+				A53AA2632C9D44F900CC8F45 /* MockListPresenter.swift */,
+				A53AA2642C9D44F900CC8F45 /* MockReachability.swift */,
+				A53AA2652C9D44F900CC8F45 /* MockRemoteDataManager.swift */,
+				A53AA2662C9D44F900CC8F45 /* MockRemoteOutputDataManager.swift */,
+				A53AA2672C9D44F900CC8F45 /* ReachableMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		A53AA26A2C9D44F900CC8F45 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A53AA2692C9D44F900CC8F45 /* WeatherListPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A53AA26C2C9D44F900CC8F45 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A53AA26B2C9D44F900CC8F45 /* WeatherListRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A53AA26E2C9D44F900CC8F45 /* stub */ = {
+			isa = PBXGroup;
+			children = (
+				A53AA26D2C9D44F900CC8F45 /* WeatherListViewControllerStub.swift */,
+			);
+			path = stub;
+			sourceTree = "<group>";
+		};
+		A53AA2702C9D44F900CC8F45 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A53AA26E2C9D44F900CC8F45 /* stub */,
+				A53AA26F2C9D44F900CC8F45 /* WeatherListViewControllerTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A53AA2712C9D44F900CC8F45 /* WeatherForcast */ = {
+			isa = PBXGroup;
+			children = (
+				A53AA25E2C9D44F900CC8F45 /* DataManager */,
+				A53AA2602C9D44F900CC8F45 /* Interactor */,
+				A53AA2682C9D44F900CC8F45 /* Mock */,
+				A53AA26A2C9D44F900CC8F45 /* Presenter */,
+				A53AA26C2C9D44F900CC8F45 /* Router */,
+				A53AA2702C9D44F900CC8F45 /* View */,
+			);
+			path = WeatherForcast;
+			sourceTree = "<group>";
+		};
+		A53AA2742C9D44F900CC8F45 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A53AA2732C9D44F900CC8F45 /* weatherList.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A53AA2762C9D44F900CC8F45 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A53AA2752C9D44F900CC8F45 /* JsonUtil.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		A5416E512C9BF3900005D788 = {
@@ -325,6 +468,10 @@
 		A5416F402C9C085D0005D788 /* WeatherAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				A53AA2592C9D44F900CC8F45 /* Info.plist */,
+				A53AA2712C9D44F900CC8F45 /* WeatherForcast */,
+				A53AA2742C9D44F900CC8F45 /* Resources */,
+				A53AA2762C9D44F900CC8F45 /* Utility */,
 				A5416F3F2C9C085D0005D788 /* WeatherAppTests.swift */,
 			);
 			path = WeatherAppTests;
@@ -482,6 +629,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53AA2772C9D44F900CC8F45 /* Info.plist in Resources */,
+				A53AA2782C9D44F900CC8F45 /* weatherList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +777,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5416F412C9C085D0005D788 /* WeatherAppTests.swift in Sources */,
+				A53AA2792C9D44F900CC8F45 /* MockWeatherListPresenter.swift in Sources */,
+				A53AA27A2C9D44F900CC8F45 /* WeatherListRouterTests.swift in Sources */,
+				A53AA27B2C9D44F900CC8F45 /* WeatherListViewControllerTests.swift in Sources */,
+				A53AA27C2C9D44F900CC8F45 /* MockRemoteDataManager.swift in Sources */,
+				A53AA27D2C9D44F900CC8F45 /* WeatherListLocalDataManagerTests.swift in Sources */,
+				A53AA27E2C9D44F900CC8F45 /* MockReachability.swift in Sources */,
+				A53AA27F2C9D44F900CC8F45 /* WeatherListViewControllerStub.swift in Sources */,
+				A53AA2802C9D44F900CC8F45 /* WeatherListPresenterTests.swift in Sources */,
+				A53AA2812C9D44F900CC8F45 /* ReachableMock.swift in Sources */,
+				A53AA2822C9D44F900CC8F45 /* MockWeatherListViewController.swift in Sources */,
+				A53AA2832C9D44F900CC8F45 /* MockRemoteOutputDataManager.swift in Sources */,
+				A53AA2842C9D44F900CC8F45 /* JsonUtil.swift in Sources */,
+				A53AA2852C9D44F900CC8F45 /* MockListPresenter.swift in Sources */,
+				A53AA2862C9D44F900CC8F45 /* WeatherListRemoteDataManagerTests.swift in Sources */,
+				A53AA2872C9D44F900CC8F45 /* WeatherListInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

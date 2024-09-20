@@ -9,7 +9,18 @@ target 'WeatherApp' do
   #pod 'Alamofire'#, '~> 5.0'
   pod 'ObjectMapper'
   pod 'NVActivityIndicatorView'#, '~> 4.4.0'
-  pod 'Kingfisher', '~> 5.0'
   pod 'SnapKit'
 
+end
+
+target 'WeatherAppTests' do
+  use_frameworks!
+# Pods for testing
+pod 'Quick'
+pod 'Nimble'
+pod 'ObjectMapper'
+end
+
+target 'WeatherAppUITests' do
+  # Pods for testing
 end
