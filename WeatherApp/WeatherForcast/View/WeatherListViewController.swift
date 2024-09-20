@@ -46,6 +46,7 @@ class WeatherListViewController: UIViewController {
     
     private func setupSearchBar() {
         self.searchBar.delegate = self
+        searchBar.text = Constants.Search.defaultText
         searchBar.layer.borderColor = searchBar.barTintColor?.cgColor
         // these 2 lines get rid of the 1 px line
         searchBar.backgroundColor = .white
