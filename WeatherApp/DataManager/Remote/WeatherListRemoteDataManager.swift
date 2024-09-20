@@ -23,8 +23,7 @@ class WeatherListRemoteDataManager: WeatherListRemoteDataManagerInputProtocol {
                 do {
                     let jsonArray = try JSONSerialization.jsonObject(with: response.data!, options: [])
                     print(jsonArray)     // server data
-                }
-                catch {
+                } catch {
                     print(response.data as Any)     // server data
                 }
                 

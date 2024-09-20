@@ -1,12 +1,10 @@
-
 struct WeatherModel: Codable {
     
 //    let city : String?
-    let cnt : Int?
-    let cod : String?
-    let weatherList : [WeatherList]?
-    let message : Int?
-    
+    let cnt: Int?
+    let cod: String?
+    let weatherList: [WeatherList]?
+    let message: Int?
     
     enum CodingKeys: String, CodingKey {
 //        case city = "city"
@@ -25,18 +23,16 @@ struct WeatherModel: Codable {
     }
 }
 
+struct City: Codable {
 
-struct City : Codable {
-
-    let coord : Coord?
-    let country : String?
-    let id : Int?
-    let name : String?
-    let population : Int?
-    let sunrise : Int?
-    let sunset : Int?
-    let timezone : Int?
-
+    let coord: Coord?
+    let country: String?
+    let id: Int?
+    let name: String?
+    let population: Int?
+    let sunrise: Int?
+    let sunset: Int?
+    let timezone: Int?
 
     enum CodingKeys: String, CodingKey {
         case coord = "coord"
@@ -60,21 +56,19 @@ struct City : Codable {
         timezone = try values.decodeIfPresent(Int.self, forKey: .timezone)
     }
 
-
 }
-struct WeatherList : Codable {
+struct WeatherList: Codable {
     
-    let clouds : Cloud?
-    let dt : Int?
-    let dtTxt : String?
-    let main : Main?
-    let pop : Float?
-    let rain : Rain?
-    let sys : Sy?
-    let visibility : Int?
-    let weather : [Weather]?
-    let wind : Wind?
-
+    let clouds: Cloud?
+    let dt: Int?
+    let dtTxt: String?
+    let main: Main?
+    let pop: Float?
+    let rain: Rain?
+    let sys: Sy?
+    let visibility: Int?
+    let weather: [Weather]?
+    let wind: Wind?
 
     enum CodingKeys: String, CodingKey {
         case clouds
@@ -107,13 +101,11 @@ struct WeatherList : Codable {
 //        wind = try Wind(from: decoder)
     }
 
-
 }
 
-struct Cloud : Codable {
+struct Cloud: Codable {
 
-    let all : Int?
-
+    let all: Int?
 
     enum CodingKeys: String, CodingKey {
         case all = "all"
@@ -123,19 +115,18 @@ struct Cloud : Codable {
         all = try values.decodeIfPresent(Int.self, forKey: .all)
     }
 
-
 }
 
-struct Main : Codable {
-    let feelsLike : Float?
-    let grndLevel : Int?
-    let humidity : Int?
-    let pressure : Int?
-    let seaLevel : Int?
-    let temp : Float?
-    let tempKf : Float?
-    let tempMax : Float?
-    let tempMin : Float?
+struct Main: Codable {
+    let feelsLike: Float?
+    let grndLevel: Int?
+    let humidity: Int?
+    let pressure: Int?
+    let seaLevel: Int?
+    let temp: Float?
+    let tempKf: Float?
+    let tempMax: Float?
+    let tempMin: Float?
 
     enum CodingKeys: String, CodingKey {
         case feelsLike = "feels_like"
@@ -163,8 +154,8 @@ struct Main : Codable {
     }
 }
 
-struct Rain : Codable {
-    let hours : Float?
+struct Rain: Codable {
+    let hours: Float?
 
     enum CodingKeys: String, CodingKey {
         case hours = "3h"
@@ -175,9 +166,8 @@ struct Rain : Codable {
     }
 }
 
-
-struct Sy : Codable {
-    let pod : String?
+struct Sy: Codable {
+    let pod: String?
     enum CodingKeys: String, CodingKey {
         case pod = "pod"
     }
@@ -187,13 +177,12 @@ struct Sy : Codable {
     }
 }
 
-struct Weather : Codable {
+struct Weather: Codable {
 
-    let descriptionField : String?
-    let icon : String?
-    let id : Int?
-    let main : String?
-
+    let descriptionField: String?
+    let icon: String?
+    let id: Int?
+    let main: String?
 
     enum CodingKeys: String, CodingKey {
         case descriptionField = "description"
@@ -211,16 +200,13 @@ struct Weather : Codable {
 //        main = try values.decodeIfPresent(Main.self, forKey: .main)
     }
 
-
 }
 
+struct Wind: Codable {
 
-struct Wind : Codable {
-
-    let deg : Int?
-    let gust : Float?
-    let speedWind : Float?
-
+    let deg: Int?
+    let gust: Float?
+    let speedWind: Float?
 
     enum CodingKeys: String, CodingKey {
         case deg = "deg"
@@ -234,14 +220,12 @@ struct Wind : Codable {
         speedWind = try values.decodeIfPresent(Float.self, forKey: .speedWind)
     }
 
-
 }
 
-struct Coord : Codable {
+struct Coord: Codable {
 
-    let lat : Float?
-    let lon : Float?
-
+    let lat: Float?
+    let lon: Float?
 
     enum CodingKeys: String, CodingKey {
         case lat = "lat"
@@ -253,9 +237,4 @@ struct Coord : Codable {
         lon = try values.decodeIfPresent(Float.self, forKey: .lon)
     }
 
-
 }
-
-
-
-

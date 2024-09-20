@@ -517,6 +517,7 @@
 				A5416E572C9BF3900005D788 /* Frameworks */,
 				A5416E582C9BF3900005D788 /* Resources */,
 				8FC4F1C1FC1449A22830ACD9 /* [CP] Embed Pods Frameworks */,
+				A53AA2892C9D653300CC8F45 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -721,6 +722,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WeatherApp/Pods-WeatherApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		A53AA2892C9D653300CC8F45 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint autocorrect --format\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		E207C74771250B714C0E2D80 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

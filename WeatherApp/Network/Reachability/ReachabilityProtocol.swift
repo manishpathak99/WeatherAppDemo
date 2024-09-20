@@ -5,7 +5,6 @@
 //  Created by MANISH PATHAK
 //
 
-
 import Foundation
 
 protocol ReachabilityProtocol: class {
