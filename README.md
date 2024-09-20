@@ -4,8 +4,11 @@ This application provides real-time weather information for any city using the O
 Key features:
 
 Search for weather information by city
+
 Display temperature, wind speed, and humidity
+
 View minimum and maximum temperatures
+
 Uses OpenWeather API for real-time data
 
 ## Pre-requisites
